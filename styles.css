@@ -63,51 +63,58 @@ div {
     align-items: flex-start;
 }
 
-#mid-five {
+#element-five {
     background-color: yellow;
     flex: 1;
     margin: 1%;
 }
 
-#inner-one {
+#element-one {
     background-color: tomato;
     flex: 1;
     margin: 1%;
     height: 40%;
 }
 
-#inner-two {
+#element-two {
     background-color: tomato;
     flex: 4;
     margin: 1%;
     height: 40%;
 }
 
-#inner-three {
+#element-three {
     background-color: white;
     margin: 2%;
     height: 40%;
     flex: 1;
 }
 
-#inner-four {
+#element-four {
     background-color: yellow;
     margin: 4%;
     height: 15%;
     flex: 1;
 }
 
-.inner-five {
+.element-five {
     background-color: blueviolet;
     margin: 3%;
     height: 60%;
     flex: 1;
-
 }
 
-#inner-six {
+#element-six {
     background-color: blueviolet;
     margin: 1%;
     flex: 0.96;
     height: 60%;
+}
+
+@media only screen and (min-width : 768px) {
+
+}
+
+@media only screen and (min-width: 576px) {
+
 }
