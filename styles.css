@@ -1,17 +1,18 @@
 div {
     max-width: 1200px;
+    display: flex;
 }
 
 .shared-outer {
     background-color: black;
     padding: 1%;
     margin: 2%;
-    display: flex;
 }
 
 #outer-one {
     height: 100px;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
 #outer-two {
@@ -25,15 +26,14 @@ div {
 #mid-one {
     background-color: grey;
     flex: 1;
-    margin: 1%;
     display: flex;
     align-items: center;
+
 }
 
 #mid-two {
     background-color: orange;
     flex: 1;
-    margin: 1%;
     display: flex;
     align-items: center;
 }
@@ -59,17 +59,12 @@ div {
 #mid-four {
     background-color: red;
     flex: 1;
+    flex-flow: column wrap;
     margin: 1%;
-    align-items: flex-start;
+    align-items: center;
 }
 
-#element-five {
-    background-color: yellow;
-    flex: 1;
-    margin: 1%;
-}
-
-#element-one {
+.element-one {
     background-color: tomato;
     flex: 1;
     margin: 1%;
@@ -86,15 +81,15 @@ div {
 #element-three {
     background-color: white;
     margin: 2%;
-    height: 40%;
+    height: 50%;
     flex: 1;
 }
 
-#element-four {
+.element-four {
     background-color: yellow;
-    margin: 4%;
+    margin: 2%;
     height: 15%;
-    flex: 1;
+    width: 90%;
 }
 
 .element-five {
@@ -111,10 +106,11 @@ div {
     height: 60%;
 }
 
-@media only screen and (min-width : 768px) {
-
+#element-seven {
+    background-color: yellow;
+    flex: 1;
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width : 768px) {}
 
-}
+@media only screen and (min-width: 576px) {}
