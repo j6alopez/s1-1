@@ -120,11 +120,30 @@ div {
     height: 90%;
 }
 
+#element-one-animated:hover {
+    animation-name: "hover-one";
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hover-one {
+    0% {
+        background-color: yellow;
+        cursor: pointer;
+    }
+
+    100% {
+        transform: scale(1.1, 1.4);
+        background-color: yellow;
+        cursor: pointer;
+    }
+}
+
 @media only screen and (max-width : 768px) {
     body {
-        background-color: springgreen;  
+        background-color: springgreen;
     }
-    
+
     #outer-two {
         background-color: yellow;
         flex-flow: column wrap;
@@ -148,7 +167,7 @@ div {
 
 @media only screen and (max-width: 576px) {
     body {
-        background-color: blue;  
+        background-color: blue;
     }
 
     .shared-outer {
