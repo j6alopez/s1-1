@@ -11,7 +11,7 @@ div {
 
 #outer-one {
     height: 100px;
-    flex-direction: column;
+    flex-flow: column wrap;
     justify-content: space-evenly;
 }
 
@@ -63,6 +63,7 @@ div {
     flex-flow: column wrap;
     margin: 1%;
     align-items: center;
+    justify-content: start;
 }
 
 .element-one {
@@ -88,9 +89,9 @@ div {
 
 .element-four {
     background-color: yellow;
-    margin: 2%;
     height: 15%;
-    width: 90%;
+    margin: 1%;
+    width: 95%;
 }
 
 .element-five {
@@ -112,6 +113,17 @@ div {
     flex: 1;
 }
 
-@media only screen and (min-width : 768px) {}
+@media only screen and (max-width : 768px) {
+    #outer-two {
+        background-color: yellow;
+        flex-flow: column ;
+    }
 
-@media only screen and (min-width: 576px) {}
+    #mid-four {
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {}
