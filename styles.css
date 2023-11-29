@@ -121,6 +121,10 @@ div {
 }
 
 @media only screen and (max-width : 768px) {
+    body {
+        background-color: springgreen;  
+    }
+    
     #outer-two {
         background-color: yellow;
         flex-flow: column wrap;
@@ -140,11 +144,12 @@ div {
         width: 98%;
         height: 25%;
     }
-
-
 }
 
 @media only screen and (max-width: 576px) {
+    body {
+        background-color: blue;  
+    }
 
     .shared-outer {
         padding: 3%;
@@ -165,12 +170,9 @@ div {
     }
 
     #mid-one {
-        background-color: grey;
-        display: flex;
         flex-flow: column;
         flex: 2 2 auto;
-        align-items: center;
-        margin-bottom: 0.5%;
+        margin-bottom: 3%;
         padding: 3%;
     }
 
@@ -182,6 +184,7 @@ div {
     #mid-four {
         padding: 3%;
         justify-content: space-evenly;
+        margin-top: 3%;
     }
 
     .element-one {
@@ -199,6 +202,13 @@ div {
         height: 10%;
     }
 
+    #element-three,
+    #element-six,
+    #element-seven,
+    .element-five {
+        margin: 2%;
+    }
+
     .element-four {
         background-color: yellow;
         margin: 1%;
@@ -206,9 +216,7 @@ div {
     }
 
     .element-five {
-        background-color: blueviolet;
         height: 30%;
-        margin: 2%;
         width: 80%;
     }
 
@@ -223,9 +231,4 @@ div {
         padding: 1%;
         flex: 1 1 auto;
     }
-
-    #element-six {
-        margin: 2%;
-    }
-
 }
