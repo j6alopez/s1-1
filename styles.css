@@ -4,9 +4,9 @@ div {
 
 .shared-outer {
     background-color: black;
-    padding: 1%;
-    margin: 2%;
     display: flex;
+    padding: 1%;
+    margin: 0.5%;
 }
 
 #outer-one {
@@ -20,7 +20,9 @@ div {
 }
 
 #outer-three {
-    height: 50px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
 }
 
 #mid-one {
@@ -41,17 +43,17 @@ div {
 #mid-three {
     background-color: gray;
     display: flex;
-    flex: 2;
-    margin: 1%;
+    flex: 2 2;
     flex-flow: column wrap;
     justify-content: center;
 }
 
-.mid-three-subcontainer {
+.mid-three-subcontainer,
+#mid-four-subcontainer {
     background-color: gray;
     display: flex;
     flex: 1 1 auto;
-    justify-content: center;
+    justify-content: space-evenly;
     align-content: center;
 }
 
@@ -60,7 +62,7 @@ div {
     display: flex;
     flex: 1 1 auto;
     flex-flow: column wrap;
-    margin: 1%;
+    margin-left: 1%;
     align-items: center;
     justify-content: start;
 }
@@ -72,10 +74,18 @@ div {
     height: 40%;
 }
 
+#element-two {
+    background-color: tomato;
+    flex: 4 4 auto;
+    margin: 1%;
+    height: 40%;
+}
+
+
 #element-three {
     background-color: white;
     margin: 1%;
-    height: 50%;
+    height: 40%;
     flex: 1 1 auto;
 }
 
@@ -106,36 +116,116 @@ div {
 
 #element-seven {
     background-color: yellow;
-    flex: 1;
+    flex: 1 1 auto;
+    height: 90%;
 }
 
 @media only screen and (max-width : 768px) {
     #outer-two {
         background-color: yellow;
-        flex-flow: column ;
+        flex-flow: column wrap;
+        height: 150px;
     }
 
     #mid-four {
         align-items: center;
         justify-content: center;
+        margin-left: 0%;
+        margin-top: 1%;
+    }
+
+    .element-four {
+        background-color: yellow;
+        margin: 0.3%;
+        width: 98%;
+        height: 25%;
+    }
+
+
+}
+
+@media only screen and (max-width: 576px) {
+
+    .shared-outer {
+        padding: 3%;
+        margin: 5%;
+    }
+
+    #outer-one {
+        height: 250px;
+    }
+
+    #outer-two {
+        height: 350px
+    }
+
+    #outer-three {
+        height: 58px;
+        padding: 3%;
+    }
+
+    #mid-one {
+        background-color: grey;
+        display: flex;
+        flex-flow: column;
+        flex: 2 2 auto;
+        align-items: center;
+        margin-bottom: 0.5%;
+        padding: 3%;
+    }
+
+    #mid-two {
+        flex: 1 1 auto;
+        padding: 3%;
+    }
+
+    #mid-four {
+        padding: 3%;
+        justify-content: space-evenly;
+    }
+
+    .element-one {
+        background-color: tomato;
+        flex: 1 1 auto;
+        width: 95%;
+        height: 10%;
+        margin: 2%;
+    }
+
+    #element-two {
+        background-color: tomato;
+        flex: 1 1 auto;
+        width: 95%;
+        height: 10%;
     }
 
     .element-four {
         background-color: yellow;
         margin: 1%;
-        width: 98%;
+        height: 25%;
     }
-    
+
+    .element-five {
+        background-color: blueviolet;
+        height: 30%;
+        margin: 2%;
+        width: 80%;
+    }
+
+    .mid-three-subcontainer {
+        flex-flow: row wrap;
+        padding: 1%;
+        flex: 2 2 auto;
+    }
+
+    #mid-four-subcontainer {
+        flex-flow: row wrap;
+        padding: 1%;
+        flex: 1 1 auto;
+    }
+
+    #element-six {
+        margin: 2%;
+    }
 
 }
-
-/* @media only screen and (max-width: 576px) {
-    #mid-one {
-        background-color: grey;
-        display: flex;
-        flex: 1 1 auto;
-        align-items: center;
-        margin-bottom: 0.5%;
-    }
-    
-} */
